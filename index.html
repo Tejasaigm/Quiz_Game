@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Start Screen -->
+    <div class="start-screen" id="startScreen">
+        <h1>Welcome to the Online Quiz</h1>
+        <p>Test your knowledge with this interactive quiz!</p>
+        <button id="startButton">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Container -->
+    <div class="quiz-container" id="quizContainer">
+        <div class="quiz-header">
+            <div class="timer">
+                <i class="fas fa-clock"></i>
+                <span id="timeLeft">60</span> seconds
+            </div>
+            <div class="score">
+                <i class="fas fa-star"></i>
+                <span id="score">0</span> points
+            </div>
+        </div>
+        <div class="question" id="question"></div>
+        <div class="options" id="options"></div>
+        <button id="nextButton">Next Question</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div class="result-screen" id="resultScreen">
+        <h1>Quiz Completed!</h1>
+        <p>Your final score is <span id="finalScore">0</span> out of <span id="totalQuestions">0</span>.</p>
+        <button id="restartButton">Restart Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
