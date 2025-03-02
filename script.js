@@ -104,7 +104,7 @@ const quizData = [
 
 let currentQuestionIndex = 0;
 let score = 0;
-let timeLeft = 60;
+let timeLeft = 300;
 let timer;
 
 // DOM Elements
